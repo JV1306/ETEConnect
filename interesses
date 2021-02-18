@@ -1,0 +1,141 @@
+<meta charset="UTF-8">
+<?php
+//DADOS PARA CONEXÃO
+$servidor   =   "localhost";   //SERVIDOR
+$bd         =   "companhia";       //DATABASE
+$usuario    =   "root";        //USUÁRIO
+$senha      =   "";            //SENHA
+?>
+<html>
+<meta charset="UTF-8">
+<head>
+    <title>ETEConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/37678ac97a.js"></script>
+    <style>
+        /*fundo de rodape*/
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        nav.navbar-inverse {
+            background-color: #9932CC;
+        }
+
+        nav.navbar {
+            font-family: 'Arial Rounded MT';
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="eteconnect.php">ETEConnect</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="eteconnect.php">Feed de Notícias</a></li>
+                <li><a href="eteconnect_estudantil.php">Estudantil</a></li>
+                <li><a href="mensagens.php">Mensagens</a></li>
+                <li><a href="psicHI.php">PsicHI</a></li>
+                <li><a href="cultu_go.php">CultuGo</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.php"><span class="glyphicon glyphicon-user"></span> Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+    <button> 
+        <div>
+        <i class="fa fa-quora" aria-hidden="true"></i>
+    </button>
+    </div><br>
+     <button><div> 
+        <i class="fa fa-microchip" aria-hidden="true"></i>
+    </button></div> <br>
+        <button><div>
+        <i class="fa fa-bicycle" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-university" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-briefcase" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-car" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-coffee" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-comment-o" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-gamepad" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-hashtag" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-television" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-futbol-o" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-pencil-square" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-picture-o" aria-hidden="true"></i>
+    </button></div><br>
+    <button>
+        <i class="fa fa-flask" aria-hidden="true"></i>
+    </button>
+    <button><div>
+        <i class="fa fa-flag" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-compass" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-globe" aria-hidden="true"></i>
+    </button></div><br>
+    <button>
+        <i class="fa fa-language" aria-hidden="true"></i>
+    </button><div><br>
+    <button>
+        <i class="fa fa-code" aria-hidden="true"></i>
+    </button><div><br>
+    <button>
+        <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-film" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-trophy" aria-hidden="true"></i>
+    </button> <br>
+    <button><div>
+        <i class="fa fa-superpowers" aria-hidden="true"></i>
+    </button></div><br>
+    <button><div>
+        <i class="fa fa-podcast" aria-hidden="true"></i>
+    </button></div><br>
+    <input type="button" value="enviar">
+</body>
+</html>
