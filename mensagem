@@ -1,0 +1,20 @@
+<?php
+require_once('conecta.php');
+require_once('escreveMensagem.php');
+//exibindo as variáveis recebidas através do POST externo
+//aqui eu pego a URL para onde será enviado o POST
+$url ="127.0.0.1:8887/ETEConnect/escreveMensagem.php";
+$recebeNome= $_GET["nome"];
+$recebeMensagem=$_GET["mensagem"];
+$dados= $GET["nome", "mensagem"];
+//exibindo as variáveis recebidas através do POST externo
+echo " - Nome".$recebeNome. " - Mensagem ".$mensagem;
+
+curl_setopt($curl, CURLOPT_URL);
+curl_setopt($curl, CURLOPT_HEADER, 0);
+curl_setopt($curl, CURLOPT_POST, 1);
+//aqui eu pego os dados para enviar via POST
+curl_setopt($curl, CURLOPT_POSTFIELDS, $dados);
+curl_exec($curl);
+curl_close($curl);
+?>
