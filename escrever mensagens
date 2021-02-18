@@ -1,0 +1,30 @@
+<?php
+ require_once('mensagens.php');
+//valores
+
+$escreveNome=$_GET["nome"];
+$escreveMensagem=$_GET["mensagem"];
+ 
+//variável Array responsável por agrupar os dados a serem enviados
+$dados = array($escreveNome, $escreveMensagem);
+ 
+//URL para onde vai ser enviado nosso POST
+$url ="127.0.0.1:8887/ETEConnect/enviar_mensagem.php";
+$sql= "INSERT INTO mensagens(alu_nome, msg_txt) VALUES ('$escreveNome','$escreveMensagem')";
+$dados = array($escreveNome, $escreveMensagem);
+
+//exibindo as variáveis recebidas através do POST externo
+echo " - Nome".$escreveNome. " - Mensagem".$escreveMensagem;
+$res2=mysql_query("$sql");
+       if ($res2)
+	{
+	     echo"<p align='center'>Mensagem enviada com sucesso ao database!</p>";
+	 } 
+       else
+	  {
+   	     $erro=mysql_error();
+	     echo "<p align='center'>Erro:$erro</p>";
+	  }
+
+
+?>
