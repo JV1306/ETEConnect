@@ -1,0 +1,26 @@
+<?php
+$nome=$_POST["nome"];
+$data=$_POST["data"];
+$rm=$_POST["rm"];
+$sexo=$_POST["txt_sexo"];
+$email=$_POST["user_email"];
+$codigo=$_POST["txt_senha"];
+require("conecta.php");
+
+$sql= "INSERT INTO aluno(alu_nome, data_nasc, alu_rm, alu_sexo,alu_email,alu_senha) VALUES ('$nome','$data', '$rm','$sexo', '$email', '$codigo')";
+$res2=mysql_query("$sql");
+       if ($res2)
+	{
+	     echo"<p align='center'>Aluno incluido com sucesso!</p>";
+	 } 
+       else
+	  {
+   	     $erro=mysql_error();
+	     echo "<p align='center'>Erro:$erro</p>";
+	  }
+
+
+ mysql_close($conexao);
+//mysql_close($conecta);
+
+?>
